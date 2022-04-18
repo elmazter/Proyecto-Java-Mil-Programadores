@@ -13,6 +13,7 @@ public class TestAnimales {
 		tomi.setEdad(4);
 		tomi.setNombre("Tommy");
 		tomi.setRaza("Siames");
+		//Clases
 		
 		
 	}
