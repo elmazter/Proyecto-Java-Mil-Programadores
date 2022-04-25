@@ -17,6 +17,7 @@ public class Persona {
 		return valor;
 	}
 	public void setNombre(String nombre) {
+		
 		this.nombre = nombre;
 	}
 	public String getApellido() {
@@ -45,6 +46,11 @@ public class Persona {
 		System.out.println("Apellido: " + getApellido());
 		System.out.println("Domicilio: " +getDomicilio());
 		System.out.println("Edad : "+getEdad());
+	}
+	
+	public void testAtributos(){
+		String n = "Juan";
+		setNombre(n);
 	}
 	
 	//constructores

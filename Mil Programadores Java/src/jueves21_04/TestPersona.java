@@ -9,10 +9,14 @@ public class TestPersona {
 		//p.mostrarDatos();
 		
 		// creamos un objeto mediante un constructor
-		Persona juan = new Persona("Juan", "Rios");
+		/*Persona juan = new Persona("Juan", "Rios");
 		juan.mostrarDatos();
 		Persona c = new Persona("Carlos", "Mendez", 35);
-		c.mostrarDatos();
+		c.mostrarDatos();*/
+		
+		Persona per = new Persona("Juan","Diaz");
+		//per.nombre = "4514585";
+		per.mostrarDatos();
 			
 	}
 

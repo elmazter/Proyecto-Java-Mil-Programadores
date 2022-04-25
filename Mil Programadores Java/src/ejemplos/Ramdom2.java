@@ -10,6 +10,7 @@ public class Ramdom2 {
         int max = 100;
         int number;
         Random random = new Random();
+        
         for (int i = 0; i < 10; i++) {
         	number = random.nextInt(max - min) + min;
             System.out.print(number + " ");
