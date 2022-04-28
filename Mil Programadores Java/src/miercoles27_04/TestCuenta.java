@@ -10,9 +10,10 @@ public class TestCuenta {
 		c.setNumeroCuenta("4512-4578");
 		c.setSaldo(500);
 		c.imprimirDatos();
-		double monto = 100;
+		double monto = 0;
 		
-		if(c.ingreso(monto)){
+		boolean sePudoHacer = c.ingreso(monto);
+		if(sePudoHacer){
 			System.out.println("Se pudo realizar el ingreso");
 			System.out.println("Saldo : " +c.getSaldo());
 		}else{
@@ -20,12 +21,14 @@ public class TestCuenta {
 			System.out.println("Saldo : " +c.getSaldo());
 		}
 		
-		Cuenta cuenta = new Cuenta("Daniel", "Perez", "122356-7845", 0.05, 0);
+		Cuenta cuenta = new Cuenta("Daniel", "Perez", "122356-7845", 0.05, 250);
+		System.out.println("Cuenta Original");
 		cuenta.imprimirDatos();
-		cuenta.setSaldo(1000);
+		//cuenta.imprimirDatos();
+		cuenta.setSaldo(2500);
 		System.out.println("Saldo de Cuenta");
 		cuenta.imprimirDatos();
-		monto = 800;
+		monto = 500;
 		if(cuenta.reintegro(monto)){
 			System.out.println("Se pudo realizar el Reintegro");
 			System.out.println("Saldo : "+cuenta.getSaldo());
@@ -34,7 +37,7 @@ public class TestCuenta {
 		}
 		
 		
-		Cuenta c2 = new Cuenta(cuenta);
+		Cuenta c2 = new Cuenta(cuenta); // contructor copia
 		c2.imprimirDatos();
 		
 		

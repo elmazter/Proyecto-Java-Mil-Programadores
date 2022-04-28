@@ -11,7 +11,7 @@ public class TestCuentaTransferencia {
 		c.setSaldo(500);
 		Cuenta d = new Cuenta("Daniel", "Perez", "122356-7845", 0.05, 2000);
 		// dos parametros, el objeto destino + monto
-		double monto = 1999;
+		double monto = 1000;
 		if( d.transferir(c, monto) ){
 			System.out.println("Transferencia Exitosa");
 			System.out.println("Saldo actual : " +d.getSaldo());

@@ -7,11 +7,9 @@ public class Cuenta {
 	private double interes;
 	private double saldo;
 	
-	public Cuenta(){
+	public Cuenta(){ // defecto
 		
-	}
-	
-	
+	}	
 	
 	public Cuenta(String nombre, String apellido, String numeroCuenta,
 			double interes, double saldo) {		
@@ -23,7 +21,7 @@ public class Cuenta {
 	}
 
 
-	public Cuenta(Cuenta c) {
+	public Cuenta(Cuenta c) { //copia
 		// TODO Auto-generated constructor stub
 		this.nombre = c.getNombre();
 		this.apellido = c.getApellido();
@@ -73,8 +71,8 @@ public class Cuenta {
 	}
 
 
-
-	public boolean ingreso(double monto) {
+	
+	public boolean ingreso(double monto) {  //cuerpo del metodo
 		// TODO Auto-generated method stub
 		boolean sePudoHacer = false;
 		if(monto > 0){
@@ -85,8 +83,7 @@ public class Cuenta {
 		
 		return sePudoHacer;
 	}
-
-
+	
 
 	public boolean reintegro(double monto) {
 		// TODO Auto-generated method stub
@@ -103,15 +100,15 @@ public class Cuenta {
 
 
 
-	public boolean transferir(Cuenta c, double monto) {
+	public boolean transferir(Cuenta cd, double monto) {
 		// TODO Auto-generated method stub
 		boolean sePudoHacer = false;
 		double saldoFinal = this.saldo - monto;
 		if(saldoFinal>=0){
 			//actualizo mi saldo
 			this.saldo = this.saldo - monto;
-			//actualizo el saldo en la cueat destino
-			c.ingreso(monto);
+			//actualizo el saldo en la cuenta destino
+			cd.ingreso(monto);
 			//actualizar mi variable
 			sePudoHacer = true;
 			
