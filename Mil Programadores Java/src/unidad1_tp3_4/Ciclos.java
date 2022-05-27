@@ -6,9 +6,12 @@ public class Ciclos {
 		// TODO Auto-generated method stub
 		// FOR
 		int n=100;
-		for( int i=1 ; i<=n  ; i++ ) { 
+		for( int i=1 ; i<n  ; i++ ) { 		
+			//1
+			//2
+			//3..
 			
-			
+			//10
 		}
 				
 		System.out.println("Fin del ciclo for");

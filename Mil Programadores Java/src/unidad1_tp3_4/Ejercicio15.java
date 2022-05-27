@@ -4,12 +4,12 @@ public class Ejercicio15 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=4523  ;
-		int contador=0;
-		for (int i = 1; i <= 4563; i++) {   // raiz cuadrada de n
+		int n=149  ;
+		int contador=0; //contar los divisores
+		for (int i = 1; i <= n; i++) {   // raiz cuadrada de n
 			int resto = n%i;
 			if(resto==0) {
-				contador++;
+				contador++;//encontre un divisor, incremento el contador de divisores
 			}
 			
 		}
