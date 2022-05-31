@@ -15,6 +15,8 @@ public class TestString {
 		System.out.println(c);
 		int espacio = c;
 		System.out.println(espacio);
+		char ch = 7;
+		System.out.println(ch);
 	}
 
 }
