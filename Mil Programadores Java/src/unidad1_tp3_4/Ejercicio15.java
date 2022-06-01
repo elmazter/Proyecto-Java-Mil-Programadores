@@ -4,7 +4,7 @@ public class Ejercicio15 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=149  ;
+		int n=149;
 		int contador=0; //contar los divisores
 		for (int i = 1; i <= n; i++) {   // raiz cuadrada de n
 			int resto = n%i;

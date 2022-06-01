@@ -27,8 +27,10 @@ public class MetodosFunciones {
 		System.out.println("El numero aleatorio2 generado es: " + numero2);
 		System.out.println("Fin del programa");
 	}
+	
+	
 
-	private int generarAleatorio(int min, int max) {
+	public int generarAleatorio(int min, int max) {//firma del metodo    - sobrecarga del meotodo
 		// TODO Auto-generated method stub
 		Random r = new Random(); 
 		
@@ -36,13 +38,8 @@ public class MetodosFunciones {
 		numeroAleatorio = r.nextInt(max - min) + min;
 		
 		return numeroAleatorio;
-	}
-
-	private void imprimirPorPantalla(String frase) {
-		// TODO Auto-generated method stub
-		System.out.println(frase);
-	}
-
+	}	
+	
 	public int generarAleatorio() {//metodo - funcion
 		// TODO Auto-generated method stub
 		
@@ -54,6 +51,12 @@ public class MetodosFunciones {
 		
 		return numeroAleatorio;
 	}
+	
+
+	private void imprimirPorPantalla(String frase) {
+		// TODO Auto-generated method stub
+		System.out.println(frase);
+	}	
 
 	
 
