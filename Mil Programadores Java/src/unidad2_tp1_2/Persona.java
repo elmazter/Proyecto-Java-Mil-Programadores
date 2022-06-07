@@ -9,12 +9,51 @@ public class Persona{
 	private String domicilio;
 	
 	//metodos
-	//set  get
-	public Persona() {
-		
+	//set  get	
+	 
+	  
+	 
+	
+	//creamos un constructor
+	
+	  public Persona(String nombre, String apellido) {
+		  this.nombre = nombre;
+		  this.apellido = apellido;
+	  
+	  }
+	  public Persona() {
+			  
+	  }
+	  
+	  
+	 
+	
+	public Persona(String nombre, String apellido, int edad, int dni, String domicilio) {		
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.dni = dni;
+		this.domicilio = domicilio;
 	}
-	public Persona(Persona p) {
-		this.nombre = p.getNombre();
+	
+	//constructor copia	
+	public Persona(Persona objeto) { 
+		this.nombre = objeto.getNombre();
+		this.apellido = objeto.getApellido();
+		this.edad = objeto.getEdad();
+		this.dni = objeto.getDni();
+		this.domicilio = objeto.getDomicilio();
+		
+		}
+	
+	//firma del metodo | signature
+	public void imprimir() {
+		System.out.println("**** Mostrando los Valores Cargados *****");
+		System.out.println("Nombre: " + this.nombre);
+		System.out.println("Apellido : " + getApellido());
+		System.out.println("Dni: "+getDni());
+		System.out.println("Edad : " + getEdad());
+		System.out.println("Domiclio : " + getDomicilio());
 	}
 	
 	public String getNombre() {
@@ -30,13 +69,15 @@ public class Persona{
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	
 	public int getEdad() {
 		return edad;
 	}
 	public void setEdad(int edad) {
 		
 		this.edad = edad;
-	}
+	}	
+	
 	public int getDni() {
 		return dni;
 	}
