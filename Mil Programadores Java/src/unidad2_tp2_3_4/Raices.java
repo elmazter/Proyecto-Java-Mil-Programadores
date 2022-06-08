@@ -62,7 +62,7 @@ public class Raices {
 		return discriminante;
 	}
 	
-	public void obtenerRaices() {
+	private void obtenerRaices() {
 		double x1, x2;
 		double numerador = -getB() + Math.sqrt(getDiscriminante());
 		double denominador = 2*a;
