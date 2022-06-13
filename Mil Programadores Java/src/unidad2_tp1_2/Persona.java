@@ -1,6 +1,6 @@
 package unidad2_tp1_2;
 
-public class Persona{
+public  class Persona{ // puede ser abstract
 	// atributos
 	private String nombre;
 	private String apellido;
@@ -91,7 +91,7 @@ public class Persona{
 		this.domicilio = domicilio;
 	}
 	
-	
+	//public abstract void saludar();
 	
 	
 	
