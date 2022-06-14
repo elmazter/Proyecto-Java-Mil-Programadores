@@ -13,7 +13,7 @@ public class TestAlumnoTP2_5_6 {
 		
 		//test alumno / profesor
 		juan.saludar();
-		Profesor p = new Profesor();
+		Profesor p = new Profesor();		
 		p.saludar();
 		
 		
