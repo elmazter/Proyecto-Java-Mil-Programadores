@@ -15,7 +15,7 @@ public class ArchivosTexto {
 	/**
 	 * @param args
 	 */
-	private File f ;
+	private File f ; //atributo, es un File
 	
 	public void mostrarInformacion(){
 		System.out.println("Path : "+f.getAbsolutePath());
@@ -27,7 +27,7 @@ public class ArchivosTexto {
 	
 	public void escribirBytes(){
 		//Voy a escribir un archivo solo con bytes
-		String frase = "Probando escribir por BYTESSSS"+"\n";
+		String frase = "Probando escribir por con bytes desde un Metodo"+"\n";
 
 		byte[] obj = frase.getBytes();
 		try {
@@ -46,7 +46,8 @@ public class ArchivosTexto {
 		//System.out.println("Llamando a escritor");
 		try {
 			FileWriter out = new FileWriter(f,true);
-			out.write("Escribir caracteres 1"+"\n");
+			String frase = "Esta es una frase a escribir desde escribirCaracteres1";
+			out.write(frase+"\n");
 			out.close();
 
 		} catch (IOException e) {
@@ -59,7 +60,7 @@ public class ArchivosTexto {
 		try {
 			FileWriter fw = new FileWriter(f,true);
 			BufferedWriter out = new BufferedWriter(fw);
-			out.write("Hola este es un archivo de texto");
+			out.write("Hola este es un archivo de texto desde escribirCaracteres2");
 			out.newLine();
 			out.close();
 
@@ -73,7 +74,7 @@ public class ArchivosTexto {
 			FileWriter fw = new FileWriter(f,true);
 			BufferedWriter br = new BufferedWriter(fw);
 			PrintWriter out = new PrintWriter(br);
-			out.println("Ahora con Print Writer");
+			out.println("Ahora con Print Writer desde escribirCaracteres3");
 			out.close();
 		} catch (IOException e) {
 			// TODO: handle exception
@@ -86,7 +87,6 @@ public class ArchivosTexto {
 			if(f.createNewFile()){
 				System.out.println("El archivo se creo satisfactoriamente");
 			}else{
-
 				System.out.println("El archivo ya existe");
 			}
 
@@ -132,12 +132,13 @@ public class ArchivosTexto {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArchivosTexto a = new ArchivosTexto();
-		a.crearArchivo("miPrimerArchivo.txt");
+		a.crearArchivo("Archivo Java.txt");
 		a.mostrarInformacion();
 		//a.escribirBytes();
 		//a.escribirCaracteres1();
 		//a.escribirCaracteres2();
 		//a.escribirCaracteres3();
+		
 		//a.leerPorCaracter();
 		System.out.println("*** Leyendo el archivo de Texto ****");
 		a.leerLineaPorLinea();
