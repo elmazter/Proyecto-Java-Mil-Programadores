@@ -25,8 +25,16 @@ public class TP3_Ejercicio8 {
 		ej8.asignarArchivo(path);
 		ej8.leerArchivo();
 		ej8.ordenarLista();
-		ej8.muestreLista();
-		ej8.escribirArchivo();
+		ej8.muestrarLista();
+		//ej8.mostrarLinea(0);
+		//ej8.escribirArchivo();
+	}
+
+	private void mostrarLinea(int i) {
+		// TODO Auto-generated method stub
+		System.out.println("*****************************************");
+		System.out.println("Mostrando linea : " + i);
+		System.out.println(lista.get(i));
 	}
 
 	private void escribirArchivo() {
@@ -63,7 +71,7 @@ public class TP3_Ejercicio8 {
 
 	
 
-	private void muestreLista() {
+	private void muestrarLista() {
 		// TODO Auto-generated method stub
 		System.out.println("*** Elementos de la Lista ***");
 		for (String string : lista) {
@@ -79,11 +87,11 @@ public class TP3_Ejercicio8 {
             	
                 if ( resu>0 ) {
                     String aux = lista.get(j);
-                    lista.remove(j);
-                    lista.add(j, lista.get(i));
+                    //lista.remove(j);
+                    lista.set(j, lista.get(i));
                     //lista.get(j) = lista.get(i);
-                    lista.remove(i);
-                    lista.add(i, aux); 
+                    //lista.remove(i);
+                    lista.set(i, aux); 
                 }
             }
         
