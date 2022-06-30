@@ -2,7 +2,7 @@ package arrays;
 
 public class Ordena {
 	public static void main(String[] args) {
-		int[] data={15, 60, 8, 16, 4, 27, 12, 35};
+		int[] data={1, 60, 80, 16, 4, 7, 1, 35};
 		
 	        for (int i = 0; i < data.length; i++) {
 	            for (int j = i; j < data.length; j++) {

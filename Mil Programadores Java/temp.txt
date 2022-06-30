@@ -1,0 +1,7 @@
+Crear una lista de números, luego crear un método para recorrer la misma
+Escribe un programa que escriba los 100 primeros números naturales
+Escribe un programa que reciba el nombre de un archivo
+Ingresar un número por teclado solicitando
+Intenta escribir un programa, de nombre ?EscribeArray?
+Realizar un programa donde se implemente los métodos de una pila (push,pop, peek, empty).
+Si el fichero contiene el siguiente texto ?Hola que haces?, deberá mostrar
