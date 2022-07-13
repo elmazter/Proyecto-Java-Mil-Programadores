@@ -5,7 +5,16 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private int edad;
+	private String domicilio;
 	private int dni;
+	
+	public String getDomicilio() {
+		return domicilio;
+	}
+	public void setDomicilio(String domicilio) {
+		this.domicilio = domicilio;
+	}
+	
 	
 	public Persona(){ //constructor 1
 		
@@ -14,6 +23,15 @@ public class Persona {
 	public Persona(int dni) {
 		
 		this.dni = dni;
+	}
+	
+	public Persona(String nombre, String apellido, int edad, String domicilio, int dni) { 
+		
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad=edad;
+		this.domicilio=domicilio;
+		this.dni=dni;
 	}
 
 	public Persona(String nombre, String apellido) { //constructor 2
