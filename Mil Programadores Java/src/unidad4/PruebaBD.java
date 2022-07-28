@@ -34,8 +34,10 @@ public class PruebaBD {
             
             ResultSet resultSet; //recibir los datos
             
-            resultSet = statement.executeQuery(
-                "SELECT * FROM `alumnos` WHERE `idAlumnos`=3");
+            int idAlumnoBuscar = 2;
+            String consulta = "SELECT * FROM alumnos WHERE idAlumnos=" + Integer.toString(idAlumnoBuscar);
+            System.out.println(consulta);
+            resultSet = statement.executeQuery(consulta);
             
             prueba.armarListaAlumnos(resultSet);
             prueba.mostrarLista();
@@ -49,7 +51,7 @@ public class PruebaBD {
         }
     } // function ends
 
-	private void mostrarLista() {
+	public void mostrarLista() {
 		// TODO Auto-generated method stub
 		for (Alumno alumno : listaAlumnos) {
 			alumno.imprimirAlumno();
