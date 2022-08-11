@@ -74,6 +74,7 @@ public class ArchivosTexto {
 			FileWriter fw = new FileWriter(f,true);
 			BufferedWriter br = new BufferedWriter(fw);
 			PrintWriter out = new PrintWriter(br);
+			
 			out.println("Ahora con Print Writer desde escribirCaracteres3");
 			out.close();
 		} catch (IOException e) {
